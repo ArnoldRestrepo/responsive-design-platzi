@@ -1,0 +1,27 @@
+{
+  "name": "responsive-design-platzi",
+  "version": "0.1.0",
+  "description": "Patterns for adapter Browser Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnoldRestrepo/responsive-design-platzi.git"
+  },
+  "keywords": [
+    "Patterns",
+    "Responsive",
+    "Design",
+    "HTML5",
+    "JavaScript",
+    "CSS3"
+  ],
+  "author": "Arnold Restrepo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArnoldRestrepo/responsive-design-platzi/issues"
+  },
+  "homepage": "https://github.com/ArnoldRestrepo/responsive-design-platzi#readme"
+}
