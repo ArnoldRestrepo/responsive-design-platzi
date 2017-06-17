@@ -1,4 +1,4 @@
-#Responsive Design Platzi
+# Responsive Design Platzi
 
 ## ¿Qué es Responsive Design?
 
@@ -57,4 +57,4 @@ A la hora de crear aplicaciones web responsive debemos tener claros los siguient
 6. Estrategias
     - Graceful Degradation (Desktop First)
     - Progressive Enhancement (Mobile Fisrt)
-7. Que el sitio cargue rápido.
+7. Que los archivos carguen rápido en el servidor.
