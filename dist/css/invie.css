@@ -19,6 +19,7 @@
 body {
   font-family: 'Allerta', sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
 
@@ -54,7 +55,8 @@ input:focus, textarea:focus {
 }
 
 .contenedor {
-  width: 800px;
+  max-width: 800px;
+  width: auto;
   margin: auto;
   position: relative;
 }
@@ -271,4 +273,160 @@ input:focus, textarea:focus {
 
 .tabla {
   margin: 50px 0;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:800px) {
+ 
+  /*portada*/
+  .titulo{
+    font-size: 48px;
+    margin-top: 30px;
+  }
+
+  .title-a{
+    font-size: 18px;
+  }
+
+  .portada{
+    height: auto;
+  }
+
+  .portada .button{
+    margin: 10px 0;
+    display: inline-block;
+  }
+  /*portada*/
+
+  /*Guitarras*/
+  .guitarras{
+    text-align: center;
+  }
+  .izquierda, .derecha{
+    float: none;
+    position: static;
+  }
+
+  .title-b{
+    margin: 0;
+  }
+  .guitarra li {
+    list-style: none;
+  }
+
+  .guitarra.b{
+    height: auto;
+  }
+
+  .contenedor-guitarra-a, .contenedor-guitarra-b{
+    position: static;
+    margin: 0;
+  }
+
+  .contenedor-guitarra-a{
+    padding: 0;
+  }
+  /*Guitarras*/
+  
+}
+
+@media screen and (max-width: 767px) {
+  .footer .contenedor{
+    border: 1px solid red;
+    display: block;
+  }
+  .contacto{
+    margin: 0 auto;
+  }
+
+  .formulario{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .intereses label{
+    display: block;
+  }
+
+  .formulario input[type="text"], .formulario input[type="email"]{
+    font-size: 14px;
+    padding: 3px;
+  }
+
+  textarea{
+    width: 100%;
+  }
+
+  .col1, .col2{
+    margin: 0;
+  }
+
+  .formulario input[type="radio"], .formulario input[type="radiobox"]{
+    zoom: 1;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header{
+    text-align: center;
+  }
+
+  .logotipo{
+    margin: 0;
+  }
+
+  .menu{
+    position: static;
+    padding: 0;
+    display: block;
+  }
+
+  .menu li:first-child{
+    margin: 0;
+  }
+  .menu ul{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu li{
+    display: block;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .9);
+  }
+  
+  .menu li:first-child{
+    border-top: 1px solid rgba(255, 255, 255, .9);
+  }
+
+  .menu li:before{
+    content: "";
+    display: none;
+  }
+
+  .portada{
+    text-align: center;
+  }
+
+  .titulo{
+    font-size: 32px;
+  }
+
+  .title-b{
+    font-size: 14px;
+  }
+
+  .guitarra img{
+    width: 200px;
+  }
+
+  .title-b{
+    font-size: 32px;
+  }
+
 }
