@@ -58,3 +58,51 @@ A la hora de crear aplicaciones web responsive debemos tener claros los siguient
     - Graceful Degradation (Desktop First)
     - Progressive Enhancement (Mobile Fisrt)
 7. Que los archivos carguen rápido en el servidor.
+
+## Tipos y Formas de agregar Media Queries
+
+Se pueden agregar las media-queries desde archivos externos o en nuestra hoja de estilos principal, debemos tener en cuenta que muchas llamadas puede afectar la carga de nuestro sitio web.
+
+Desde una hoja de estilos solo para las media-queries:
+
+    <!-- HTML -->
+    <link rel="stylesheet" media="(max-width: 800px)" href="css/media-query.css"/>
+
+    /* CSS */
+    body{
+        background: red;
+        border: 1px solid peru;
+    }
+
+Desde nuestra hoja de estilos principal:
+
+Hay que tener en cuenta que debemos especificar para que tipo de medio van a funcionar. Ej: Tv, screen, print.
+
+     <!-- HTML -->
+     <link rel="stylesheet" href="css/main.css"/>
+
+     /* CSS */
+     @media screen and (max-width: 650px) {
+        .header{
+            text-align: center;
+        }
+
+        .logotipo{
+            margin: 0;
+        }
+
+        .menu{
+            position: static;
+            padding: 0;
+            display: block;
+        }
+
+        .menu li:first-child{
+            margin: 0;
+        }
+        .menu ul{
+            padding: 0;
+        }
+    }
+     
+
