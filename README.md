@@ -105,4 +105,7 @@ Hay que tener en cuenta que debemos especificar para que tipo de medio van a fun
         }
     }
      
+## Soportando múltiples resoluciones de pantalla
+
+Así cómo tenemos diferentes tamaños de pantalla, también tenemos diferentes densidades. Si la densidad de píxeles es mayor a 227 ppi, estamos hablando de una pantalla retina y lo primero que se ve afectado, si el sitio no está optimizado, son las imágenes. Las imágenes, por ser mapas de bits y no elementos vectoriales, no escalan de manera natural, toca hacer algunos trucos cómo exportar al doble de tamaño para que puedan visualizarse de manera efectiva.
 
